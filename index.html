@@ -1,0 +1,582 @@
+<!doctype html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+		<meta name="description" content="Girl Develop It framework for easily creating beautiful presentations using HTML in GDI theme. Forked from Hakim El Hattab's reveal.js">
+		<meta name="author" content="Girl Develop It">
+		<meta name="apple-mobile-web-app-capable" content="yes" />
+		<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+
+		<!-- Update with GDI Course Name -->
+		<title>Intro to Python</title>
+
+		<link rel="icon" type="image/x-icon" href="assets/imgs/favicon.ico" />
+
+		<!-- RevealJS CDN -->
+		<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/reveal.js@4.1.0/dist/reset.css">
+		<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/reveal.js@4.1.0/dist/reveal.css">
+		<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/reveal.js@4.1.0/dist/theme/simple.css" id="theme">
+
+		<!-- GDI Custom Theme -->
+		<link rel="stylesheet" href="assets/css/gdi-theme.css">
+
+		<!-- Theme used for syntax highlighted code -->
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.1.0/styles/monokai.min.css">
+	</head>
+	<body>
+		<div class="reveal">
+			<!-- Start of Slides container -- Any section element in this container is displayed as a slide -->
+			<div class="slides">
+
+        <!-- DO NOT DELETE ANY OF THE GDI INTRODUCTORY SLIDES -->
+				<!-- GDI Opening Slide -->
+				<section>
+					<img src="assets/imgs/gdi-logos/gdi-circle-logo_peach.png" alt="GDI Logo" width="400px" class="noborder"/>
+					<br>
+					<h2 style="font-weight: bolder;">Welcome to Girl Develop It</h2>
+				</section>
+
+				<!-- GDI Mission Statement -->
+				<section>
+					<img src="assets/imgs/gdi-logos/gdi-logo_peach.png" alt="GDI Logo" width="300px" class="noborder"/>
+					<br>
+					<h3>We create welcoming, supportive and accessible environments for women and non-binary adults to learn software development.</h3>
+				</section>
+
+        <!-- GDI Code of Conduct -->
+				<section>
+          <h2><span style="font-weight: bolder;">Code of Conduct</span></h2>
+					<h3>We are dedicated to providing a welcoming and comfortable environment for all to learn coding.</h3>
+					<h4><a href="https://girldevelopit.com/code-of-conduct/" target="_blank">girldevelopit.com/codeofconduct/</a></h4>
+					<h4><a href="bit.ly/gdi-incident-report" target="_blank">bit.ly/gdi-incident-report</a></h4>
+				</section>
+
+        <!-- Class Guidelines -->
+				<section>
+					<h2>Some Guidelines</h2>
+					<ul>
+						<li>We are here for you</li>
+						<li>Every question is important</li>
+						<li>Help each other</li>
+						<li>Participate, Experiment, Have Fun!</li>
+					</ul>
+				</section>
+
+				<!-- GDI Promo -->
+        <section>
+					<h2 style="font-weight: bolder;">What Does<br>Girl Develop It<br>Teach?</h2>
+				</section>
+
+        <!-- GDI Promo -->
+				<section id="fragments">
+					<h3>Web Development</h3>
+					<h3 class="fragment">Data Science</h3>
+					<h3 class="fragment">UX Design & Research</h3>
+					<h3 class="fragment">Workforce Classes</h3>
+					<h3 class="fragment">Career-Building Events & Conferences</h3>
+				</section>
+
+				<!-- GDI Promo -->
+				<section>
+					<img src="assets/imgs/gdi-logos/gdi-logo_peach.png" alt="GDI Logo" width="300px" class="noborder"/>
+					<br>
+					<h3>Find All Our Classes & Events:</h3>
+					<h3><a href="https://girldevelopit.com/">www.girldevelopit.com</a></h3>
+				</section>
+        <!-- DO NOT DELETE ANY OF THE GDI INTRODUCTORY SLIDES ABOVE THIS COMMENT -->
+
+        <!-- OPTIONAL: Instructor Intro -->
+				<section>
+					<h2>Your Instructor</h2>
+					<p><b>Liz Krznarich (she/her)</b></p>
+					<p><b>Technical Lead, <a href="https://datacite.org">DataCite</a></b></p>
+					<p>Many tech hats worn! Fullstack engineer, frontend engineer, technical trainer, graphic designer...</p>
+					<p>Python, Java, JS (Angular/React/Ember), DevOps (Ansible/Terraform/Puppet)</p>
+					<p>Fun fact: Degrees in Art and Library Science. First professional job involved hot dog ads.</p>
+				</section>
+
+        <!-- OPTIONAL: TAs Intro -->
+        <!-- Comment out the slide section if not needed. -->
+        <!-- <section>
+          <h2>Your TAs</h2>
+          <p>Names, titles</p>
+        </section> -->
+
+        <!-- OPTIONAL: Student Intros / IceBreaker -->
+        <!-- Instructor's choice. -->
+        <!-- <section>
+          <h2>Ice Breaker</h2>
+        </section> -->
+
+        <!-- BEGINNING OF COURSE SLIDES -->
+				<!-- Create as many new sections as needed -->
+
+				<!-- Course Title -->
+				<section>
+					<img src="assets/imgs/gdi-logos/gdi-circle-logo_peach.png" alt="GDI Logo" width="300px" class="noborder"/>
+					<h2>Intro to Python</h2>
+				</section>
+				<section>
+					<h2>Python is on fire!</h2>
+				</section>
+
+
+				<section>
+						<p >Top general-purpose language in the <a href="https://survey.stackoverflow.co/2022/#technology-most-popular-technologies">2022 StackOverflow developer survey</a></p>
+						<img src="assets/imgs/stack-overflow-survey.png" alt="">
+				</section>
+				<section>
+						<p >Top language in the <a href="https://pypl.github.io/PYPL.html">PYPL index</a></p>
+						<img src="assets/imgs/pypl-index.png" alt="">
+				</section>
+				<section>
+					<p>Used by tech giants, including:</p>
+                    <ul>
+                        <li>Google
+						<li>Netflix
+						<li>Instagram
+						<li>Spotify
+                    </ul>
+				</section>
+				<section>
+					<h2>Why does everyone love Python so much?!</h2>
+				</section>
+
+				<!--Course Outline--->
+				<section>
+					<h2>Course Outline</h2>
+					<div class="fragment">
+						<p>What is Python? </p>
+					</div>
+					<div class="fragment">
+						<p>Why learn Python?</p>
+					</div>
+						<div class="fragment">
+						<p>One way to use Python (repl.it)</p>
+					</div>
+						<div class="fragment">
+						<p>Python basics (variables, functions, troubleshooting)</p>
+				</section>
+
+
+				<!-- What is Python? -->
+				<section>
+					<h2>What is Python?</h2>
+				</section>
+				<section>
+                    <h3>The Python language</h3>
+                    <ul>
+                        <li>An "interpreted" general purpose programming language.
+                            <ul><li>Huh?? Runs through an interpreter application, as opposed to "compiled" languages, which are converted to machine code and run directly by a computer</li></ul>
+                        <li>Verbose, with an easy-to-read syntax
+						<li>Open source
+						<li>Can run on many systems: *nix, Windows, Mac
+                    </ul>
+				</section>
+				<section>
+                    <h3>Python history</h3>
+                    <ul>
+                        <li>Not new! Developed in the 1980s and first released in 1991
+						<li>...but many of its most useful features weren't added until v2.0 in 2000
+						<li>Current version is 3.x; 2.x deprecated in 2020
+                    </ul>
+				</section>
+				<section>
+                    <h3>Python philosophy</h3>
+					<p>From <a href="https://en.wikipedia.org/wiki/Zen_of_Python">"The Zen of Python"</a>:</p>
+					<pre style="font-size:0.8em"><code data-trim data-noescape class="python">
+						Beautiful is better than ugly.
+						Explicit is better than implicit.
+						Simple is better than complex.
+						Complex is better than complicated.
+						Readability counts.
+					</code></pre>
+					<p>"Pythonic" = code that’s easy to read, follow and understand</p>
+				</section>
+				<section>
+                    <h3>Code example</h3>
+                    <p>Key difference from other languages: whitespace is significant!</p>
+					<p>Statements _must_ be indented</p>
+                    <pre style="font-size:0.8em"><code data-trim data-noescape class="python">
+                    def add_numbers_between(start, end):
+                        sum = 0
+                        for n in range(start, end):
+                            sum += n
+                        return n
+
+                    add_numbers_between(5, 10)
+                    </code></pre>
+                </section>
+				<!-- Why Python? -->
+				<section>
+					<h2>Why Python?</h2>
+				</section>
+				<section>
+					<h2>Very flexible!</h2>
+					<p>Python is "multi-paradigm" and supports a variety of programming approaches:</p>
+					<ul>
+						<li>Procedural
+						<li>Functional
+						<li>Object-oriented
+					</ul>
+				</section>
+				<section>
+					<h2>Many uses</h2>
+					<ul>
+						<li><b>Scripting</b>, ex automating tedious tasks, cleaning up data
+						<li><b>Backend (server-side) apps</b>
+						<li><b>Web applications</b>, especially using frameworks like Django and Flask
+					</ul>
+				</section>
+				<section>
+					<h2>Easy to learn & read</h2>
+					<ul>
+						<li>Code style emphasizes readability
+						<li>Methods have human-readable names
+						<li>Readable code = easier to maintain
+					</ul>
+				</section>
+				<section>
+					<h2>Loads of built-in features</h2>
+					<p><a href="https://docs.python.org/3/library/index.html">Python standard library</a> includes everything you need for common tasks:</p>
+					<ul>
+						<li>Text processing
+						<li>Interacting with your local operating system
+						<li>Working with files
+						<li>Working with JSON
+						<li>...and so much more!
+					</ul>
+				</section>
+				<section>
+					<h2>Very extensible!</h2>
+					<p>Can't find what you need in the Python Standard Library? There's probably a package for that!</p>
+					<ul>
+						<li>~400,000 packages in the <a href="https://pypi.org/">Python Package Index (PyPi)</a>
+						<li>Loads of packages for working with common APIs (Google, Github, AWS...)
+						<li>Built-in package manager <a href="https://packaging.python.org/en/latest/guides/tool-recommendations/">pip</a>
+					</ul>
+				</section>
+				<section>
+					<h2>Very extensible!</h2>
+					<p>Popular, well-maintained frameworks available for quickly building web apps</p>
+					<ul>
+						<li><a href="https://www.djangoproject.com/">Django</a>
+						<li><a href="https://flask.palletsprojects.com/en/2.2.x/">Flask</a>
+					</ul>
+					<p>Often used to build REST APIs, which can be connected JS frontends, but can also serve frontend via a template system</p>
+				</section>
+				<section>
+					<h2>Are there any downsides?</h2>
+					<ul>
+						<li>Memory hog - can be slow, not good for games/graphics
+						<li>Not for mobile apps
+						<li>Dynamic typing = runtime errors (thorough testing needed)
+					</ul>
+				</section>
+
+        <!-- REPL Walkthrough -->
+				<section>
+					<h2>Repl Walkthrough</h2>
+					<h3><a href="https://replit.com/">www.replit.com</a></h3>
+				</section>
+
+		<!-- Slides with Code: Hello World  -->
+        <section>
+					<h3>"Hello World"!</h3>
+					<pre><code data-trim data-noescape class="python">
+						#print "Hello World" to the screen
+						print("Hello World")
+					</code></pre>
+        </section>
+
+        <!-- Slides with Code: Input  -->
+        <section>
+					<h3>Inputs</h3>
+					<pre><code data-trim data-noescape class="python">
+						#use input() to ask users to provide input
+						input("What is your name? ")
+					</code></pre>
+        </section>
+
+        <!-- Slides with Code: Variables  -->
+        <section>
+					<h3>Variables</h3>
+					<pre><code data-trim data-noescape class="python">
+						#this is a string
+						print(type("Hello World"))
+
+						#this is a integer (no decimals)
+						print(type(3))
+
+						#this is a float (decimal places)
+						print(type(3.1))
+					</code></pre>
+        </section>
+
+        <!-- Slides with Code: Functions  -->
+        <section>
+					<h3>Functions</h3>
+					<pre><code data-trim data-noescape class="python">
+						#you can create functions to do a specific task
+
+						def add(x, y)
+							answer = x + y
+							print(answer)
+
+						add(2, 3)
+					</code></pre>
+        </section>
+
+        <!-- Class Exercise -->
+				<section>
+					<h2>Your turn!</h2>
+					<p>Create a function called "mult" that multiplies two numbers and prints the answer to the screen.</p>
+					<p>Use your new function to find the answer to 12345 * 6789 = ?</p>
+				</section>
+
+        <!-- Slides with Code: Boolean Data Type  -->
+        <section>
+					<h3>Boolean Data Type</h3>
+					<pre><code data-trim data-noescape class="python">
+						#boolean data types are True/False
+						a = True
+						print(type(a))
+
+						b = False
+						print(type(b))
+					</code></pre>
+        </section>
+
+        <!-- Slides with Code: Boolean Expressions  -->
+				<section>
+					<h3>Boolean Expressions</h3>
+					<pre><code data-trim data-noescape class="python">
+						#boolean expressions evaluate to True or False
+						a = 1
+						b = 2
+
+
+						print(a > b) #is a greater than b?
+						print(a < b) #is a less than b?
+						print(a == b) #is a equal to b?
+						print(a != b) #is a not equal to b?
+					</code></pre>
+        </section>
+
+        <!-- Slides with Code: If/Else Statement  -->
+				<section>
+					<h3>If, Else statements</h3>
+					<pre><code data-trim data-noescape class="python">
+						#you can have your code make choices with if, else
+						a = 1
+						b = 2
+
+						if a == b: #if the statement evaluates to True
+						  print("a is equal to b")
+						else: #if the statement evaluates to False
+						  print("a is not equal to b")
+
+					</code></pre>
+        </section>
+
+        <!-- Slides with Code: If/Else Statement  -->
+				<section>
+					<h3>If, Else statements cont.</h3>
+					<pre><code data-trim data-noescape class="python">
+						#if, else statements with strings
+						day = "Friday"
+
+						if day == "Friday":
+						  print("Happy Friday!")
+						else:
+						  print("Have a good day!")
+
+					</code></pre>
+        </section>
+
+        <!-- Slides with Code: Exercise  -->
+				<section>
+					<h3>Putting it all together!</h3>
+					<pre><code data-trim data-noescape class="python">
+						def hello(day):
+						  print("Happy "+ day)
+						  if day == "Friday":
+						    print("It's almost the weekend!")
+						  else:
+						    print("Have a good day!")
+
+						hello("Saturday")
+						hello("Friday")
+
+					</code></pre>
+        </section>
+
+        <!-- Slides with Code: Lists  -->
+				<section>
+					<h3>Lists</h3>
+					<pre><code data-trim data-noescape class="python">
+
+						#list can hold multiple elements of different types
+						my_list = ["hello", 1, 3.5]
+
+						#lists start at 0
+						my_list[0]
+
+						#how many elements are in my list?
+						print(len(my_list))
+
+					</code></pre>
+        </section>
+
+        <!-- Slides with Code: Elif Statement  -->
+				<section>
+					<h3>Using "elif" (else+if) to add another expression</h3>
+					<pre><code data-trim data-noescape class="python">
+						def hello(day):
+						  print("Happy "+ day)
+						  if day == "Friday":
+						    print("It's almost the weekend!")
+						  elif day in ["Saturday", "Sunday"]:
+						    print("Woohoo! It's the weekend!")
+						  else:
+						    print("Have a good day!")
+
+						hello("Saturday")
+						hello("Friday")
+						hello("Tuesday")
+
+					</code></pre>
+        </section>
+
+        <!-- Slides with Code: Debugging Exercise -->
+				<section>
+					<h3>Try to break your code!</h3>
+					<pre><code data-trim data-noescape class="python">
+						def hello(day):
+						  print("Happy "+ day)
+						  if day == "Friday":
+						    print("It's almost the weekend!")
+						  elif day in ["Saturday", "Sunday"]:
+						    print("Woohoo! It's the weekend!")
+						  else:
+						    print("Have a good day!")
+
+						hello("saturday")
+
+					 </code></pre>
+        </section>
+
+        <!-- Slides with Code: Adding on -->
+				<section>
+					<h3>Making the code more robust</h3>
+					<pre><code data-trim data-noescape class="python">
+						def hello(day):
+							print("Happy "+day+"!")
+							#change day into all lowercase
+							day = day.lower()
+							if day == "friday":
+								print("It's almost the weekend!")
+							elif day in ["saturday", "sunday"]:
+								print("Woohoo! It's the weekend!")
+							else:
+								print("Have a good day")
+
+						hello("saturday")
+						hello("FRIDAY")
+					 </code></pre>
+        </section>
+
+        <!-- OPTIONAL: Show and Tell  -->
+				<!-- <section>
+					<p>(Optional Slide)</p>
+					<h2>Share What You've Built!</h2>
+				</section> -->
+
+        <!-- MUST USE/SHOW SLIDE -->
+        <!-- Resources -->
+				<section>
+					<h2>Want to learn more?</h2>
+					<p>Join us for our Python 1 class series starting next week!</p>
+					<ul>
+						<li>Meets weekly on Wed 4-6pm EDT, Aug 24-Oct 28
+						<li>Covers Python basics - data types/structures, expressions, functions, loops
+						<li>><a href="https://lizkrznarich.github.io/gdi-python-1">preview the class materials</a>
+					</ul>
+				</section>
+
+				<!-- MUST USE/SHOW SLIDE -->
+				<!-- GDI Promo - Upcoming Courses -->
+				<section>
+					<h2>New GDI Courses</h2>
+					<!-- ADD A LIST OF GDI COURSES -->
+          <!-- <h3><a href="">COURSE</a></h3> -->
+					<!-- <h3><a href="">COURSE</a></h3> -->
+					<!-- <h3><a href="">COURSE</a></h3> -->
+          <h4><a href="https://girldevelopit.com/events/" target="blank">www.girldevelopit.com/events</a></h4>
+
+				</section>
+
+        <!-- OPTIONAL: Instructor / TA Contact -->
+        <!-- <section>
+					<h2>Keep in Touch</h2>
+					<p>Instructor and/or TA Contact</p>
+				</section> -->
+
+        <!-- OPTIONAL: Q & A  -->
+        <!-- <section>
+					<h2>Q&A</h2>
+				</section> -->
+
+				<!-- Thank You -->
+				<section>
+					<img src="assets/imgs/gdi-logos/gdi-logo_peach.png" alt="GDI Logo" width="300px" class="noborder"/>
+					<br>
+					<h2>Thank You!</h2>
+				</section>
+			</div> <!-- End of Slides container -->
+
+  		<footer>
+				<!-- Update with Course Name -->
+        <div class="copyright">
+					<img src="assets/imgs/gdi-logos/gdi-logo_peach.png" alt="GDI Logo" width="40px" class="noborder"/>
+					<p>Intro to Python</p>
+          <a rel="license" href="http://creativecommons.org/licenses/by-nc/3.0/deed.en_US"><img alt="Creative Commons License" style="border-width:0" src="http://i.creativecommons.org/l/by-nc/3.0/80x15.png"/></a>
+        </div>
+      </footer>
+		</div> <!-- End of Reveal wrapper -->
+
+		<!-- REVEAL.JS Script Files - Do Not Edit -->
+		<script src="https://cdn.jsdelivr.net/npm/reveal.js@4.1.0/dist/reveal.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/reveal.js@4.1.0/plugin/highlight/highlight.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/highlightjs-badge@0.1.9/highlightjs-badge.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jsPlumb/2.15.5/js/jsplumb.min.js"></script>
+		<script>
+			const srcUrlPrefix = "https://cdn.jsdelivr.net/npm/reveal.js@4.1.0/";
+			Reveal.initialize({
+				hash: true,
+				center: true,
+				slideNumber: true,
+				showNotes: false,
+				margin: 0.1,
+				preloadIframes: true,
+				plugins: [ RevealHighlight ],
+				pdfSeparateFragments: true
+			});
+
+      // add HighlightJS-badge (options are optional)
+			var options = {
+					copyIconContent: "📄",
+					checkIconContent: "✅"
+			};
+			window.highlightJsBadge(options);
+
+			if (window.location.search == "?print-pdf") {
+					var uncounted = document.querySelectorAll("[data-visibility='uncounted']");
+					uncounted.forEach(node => {
+							node.parentNode.classList.add("no-print")
+					})
+			}
+		</script>
+	</body>
+</html>
